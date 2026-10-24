@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio - Classroom</title>
+  <link rel="icon" type="image/jpeg" href='data:image/jpeg;base64,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'>
+  
+  <!-- Tailwind CSS & Lucide Icons -->
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=7JlonMtwTgl5GU9ADo6eF2BSUz9K_jrVNKmW6sNhw_gQI4Mj-SW6VGK--8DA7FimXQtD1PocRfbG_yLebhElv8D-TvauKgn2G2wmwIXJRhQRUqmYLo8Rf4OwJCPC0NML6R6vLUmMpGU0f2Xj5wlbwOoVtLiAHYpsheMe7zDMPeHP3XyxQXkTYJLkSf3mVtEUxeEL-3yAhyh_v_AOA4z-3N9odMcK7tOLyZBoz4WsqNViodPJx4r0slObyIP9PhvrEeToLhBOCw3LqKBxiOKcqeUIfvVxRxDUH0nhJlHC_oCoe-oL_vQOqsseS81wKB_EEsGaqRQL9fxx2A_JBXeFpx9_Oq0jhHtaVVdy1SljwZa3brFH6sDaNG40Ynpf2nOCHrQTwZTLsojNvb9cl1iAWFZywhXYlgazd1bO-iHoKzEbpzdaFn711SknWqUWSd9zBN3XwUjLw5oiFXhG9dTZ30RvU24RT4xXIAynTV70EOoTTRGYJ5zRsFViNBSsagbU5zuQni3_1LqvJ0gCfKTwznlfHSXQ3Ke1a_A_y_ERMlMB4gNAUMViP63K4MmiE79vS7ZIXhb638dFj1tgaDEP1B2QWuphgOucrTu12sfXSBhY7qdHcSpMB_kWSymeMoBFqdqcg5cbAAqwQru5UOmsINUsrbvUpiSgRAy6jdc5r9x3vEVff1TdMpLy6hx-DZ3f94yq-MBrirZeya0dMD6w4Q" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9wcm9kLWNoYXQta2ltaS50b3MtY24tYmVpamluZy52b2xjZXMuY29tL2tpbWktZnMvb2tjL2FrZHV1djRrZDM0cjIvb3V0cHV0L2p1ZWdvc19kZV9qdWxpb19wb3J0YWxfZnV0dXJpc3RhLmh0bWw_WC1Ub3MtQWxnb3JpdGhtPVRPUzQtSE1BQy1TSEEyNTYmWC1Ub3MtQ3JlZGVudGlhbD1BS0xUWVRKbE5qZ3dNalkyWkRCa05ERmlZbUk1WVdOaVpEQmxabUZtWWpJelpUQSUyZjIwMjYxMDIzJTJmY24tYmVpamluZyUyZnRvcyUyZnJlcXVlc3QmWC1Ub3MtRGF0ZT0yMDI2MTAyM1QxODM5MTVaJlgtVG9zLUV4cGlyZXM9NTE4NDAwJlgtVG9zLVNpZ25hdHVyZT05M2IxNDJlZDFjOThjODU1NDRiNzE4NWI1Y2ViOGRjNGUzMjE1YTU1MDAxZGE2MWI0NDVjOGUyN2IzNzE4Y2Y0JlgtVG9zLVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWF0dGFjaG1lbnQlM2IlMjBmaWxlbmFtZSUyYSUzZFVURi04JTI3JTI3anVlZ29zX2RlX2p1bGlvX3BvcnRhbF9mdXR1cmlzdGEuaHRtbA"/><script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Rajdhani:wght@500;600;700&display=swap');
+
+    :root {
+      --bg-dark: #06060c;
+      --neon-cyan: #00f0ff;
+      --neon-magenta: #ff007f;
+      --neon-purple: #8a2be2;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: #e2e8f0;
+      font-family: 'Rajdhani', sans-serif;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, .font-orbitron {
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    /* Grid Scanline Overlay */
+    .cyber-grid {
+      background-image: 
+        linear-gradient(to right, rgba(0, 240, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 240, 255, 0.05) 1px, transparent 1px);
+      background-size: 30px 30px;
+    }
+
+    .scanline {
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      pointer-events: none;
+      background: linear-gradient(
+        to bottom,
+        rgba(255,255,255,0),
+        rgba(255,255,255,0) 50%,
+        rgba(0, 0, 0, 0.3) 50%,
+        rgba(0, 0, 0, 0.3)
+      );
+      background-size: 100% 4px;
+      z-index: 40;
+      opacity: 0.6;
+    }
+
+    /* Cyberpunk Cutout Corners */
+    .cyber-card {
+      clip-path: polygon(
+        0 15px, 
+        15px 0, 
+        calc(100% - 15px) 0, 
+        100% 15px, 
+        100% calc(100% - 15px), 
+        calc(100% - 15px) 100%, 
+        15px 100%, 
+        0 calc(100% - 15px)
+      );
+      background: rgba(12, 14, 28, 0.85);
+      border: 1px solid rgba(0, 240, 255, 0.2);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .cyber-card:hover {
+      border-color: var(--neon-cyan);
+      box-shadow: 0 0 20px rgba(0, 240, 255, 0.4), inset 0 0 15px rgba(0, 240, 255, 0.1);
+      transform: translateY(-4px);
+    }
+
+    .cyber-button {
+      clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+      transition: all 0.2s ease;
+    }
+
+    .cyber-button-magenta {
+      background: linear-gradient(135deg, #ff007f, #8a2be2);
+      box-shadow: 0 0 10px rgba(255, 0, 127, 0.4);
+    }
+
+    .cyber-button-magenta:hover {
+      box-shadow: 0 0 20px rgba(255, 0, 127, 0.8);
+      filter: brightness(1.2);
+    }
+
+    .cyber-button-cyan {
+      background: linear-gradient(135deg, #00f0ff, #0072ff);
+      box-shadow: 0 0 10px rgba(0, 240, 255, 0.4);
+      color: #000;
+    }
+
+    .cyber-button-cyan:hover {
+      box-shadow: 0 0 20px rgba(0, 240, 255, 0.8);
+      filter: brightness(1.2);
+    }
+
+    /* Neon Text Effects */
+    .glow-cyan {
+      text-shadow: 0 0 10px rgba(0, 240, 255, 0.7), 0 0 20px rgba(0, 240, 255, 0.5);
+    }
+    .glow-magenta {
+      text-shadow: 0 0 10px rgba(255, 0, 127, 0.7), 0 0 20px rgba(255, 0, 127, 0.5);
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #06060c;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1a1d36;
+      border: 1px solid var(--neon-cyan);
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--neon-cyan);
+    }
+  </style>
+</head>
+<body class="min-h-screen cyber-grid flex flex-col justify-between relative">
+
+  <!-- Scanline Overlay -->
+  <div class="scanline"></div>
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-30 bg-[#06060c]/90 backdrop-blur-md border-b border-cyan-500/30 px-4 lg:px-8 py-4">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      
+      <!-- Logo -->
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded bg-cyan-500/10 border border-cyan-400 flex items-center justify-center shadow-[0_0_15px_rgba(0,240,255,0.4)]">
+          <i data-lucide="gamepad-2" class="text-cyan-400 w-6 h-6"></i>
+        </div>
+        <div>
+          <h1 class="text-2xl font-black tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-pink-500 to-purple-500 glow-cyan">
+            JUEGOS DE JULIO
+          </h1>
+          <p class="text-xs text-cyan-400/70 tracking-widest uppercase">Cyberpunk Gaming Hub</p>
+        </div>
+      </div>
+
+      <!-- Buscador -->
+      <div class="relative w-full md:w-96">
+        <input 
+          type="text" 
+          id="searchInput"
+          placeholder="Buscar un juego..." 
+          class="w-full bg-[#0d0f1d] border border-cyan-500/40 text-cyan-300 placeholder-cyan-600 px-4 py-2 pl-10 rounded focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 font-sans transition-all"
+          oninput="renderGames()"
+        />
+        <i data-lucide="search" class="absolute left-3 top-2.5 text-cyan-500/60 w-5 h-5"></i>
+      </div>
+
+      <!-- Admin Actions -->
+      <div class="flex items-center gap-3">
+        <button 
+          onclick="openAdminModal()" 
+          class="cyber-button cyber-button-magenta text-white font-bold px-4 py-2 text-sm flex items-center gap-2"
+        >
+          <i data-lucide="settings" class="w-4 h-4"></i>
+          <span>ADMIN PANEL</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="max-w-7xl mx-auto px-4 lg:px-8 py-8 flex-1 w-full">
+    
+    <!-- Game Grid -->
+    <div id="gamesGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <!-- Los juegos se renderizan dinámicamente -->
+    </div>
+
+    <!-- Empty State -->
+    <div id="emptyState" class="hidden text-center py-20">
+      <i data-lucide="ghost" class="w-16 h-16 text-pink-500 mx-auto mb-4 animate-bounce"></i>
+      <h3 class="text-xl font-bold text-gray-300 font-orbitron">No se encontraron juegos</h3>
+      <p class="text-gray-500 text-sm mt-1">Intenta con otro término de búsqueda o añade uno nuevo.</p>
+    </div>
+
+  </main>
+
+  <!-- FOOTER Y CRÉDITOS -->
+  <footer class="border-t border-cyan-500/20 bg-[#040408] py-6 px-4 text-center relative z-20">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
+      <div>
+        <p class="font-orbitron tracking-widest text-cyan-400">
+          Hecho por <span class="text-pink-500 font-bold glow-magenta">JuliusProYT</span>
+        </p>
+        <p class="text-xs text-gray-500 mt-1">sugerencias y contacto</p>
+      </div>
+      <div class="text-xs text-gray-600">
+        &copy; 2026 Juegos de Julio. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- REPRODUCTOR MODAL (GAME PLAYER) -->
+  <div id="playerModal" class="fixed inset-0 z-50 hidden bg-black/95 backdrop-blur-md flex flex-col">
+    <!-- Header Modal -->
+    <div class="bg-[#0a0c16] border-b border-cyan-500/40 px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <i data-lucide="play-circle" class="text-cyan-400 w-5 h-5"></i>
+        <h3 id="modalGameTitle" class="text-cyan-300 font-orbitron font-bold text-lg tracking-wide truncate max-w-md">
+          Cargando Juego...
+        </h3>
+      </div>
+
+      <!-- Toolbar Controles -->
+      <div class="flex items-center gap-2">
+        <button onclick="reloadGame()" title="Recargar" class="p-2 bg-slate-800 hover:bg-slate-700 text-cyan-400 rounded border border-cyan-500/30 transition-all">
+          <i data-lucide="rotate-cw" class="w-4 h-4"></i>
+        </button>
+        <button onclick="toggleFullscreen()" title="Pantalla Completa" class="p-2 bg-slate-800 hover:bg-slate-700 text-cyan-400 rounded border border-cyan-500/30 transition-all">
+          <i data-lucide="maximize" class="w-4 h-4"></i>
+        </button>
+        <button onclick="openInExternalWindow()" title="Abrir en ventana externa (Fallback)" class="px-3 py-1.5 bg-pink-600 hover:bg-pink-500 text-white font-bold rounded text-xs flex items-center gap-1.5 transition-all shadow-[0_0_10px_rgba(255,0,127,0.5)]">
+          <i data-lucide="external-link" class="w-4 h-4"></i>
+          <span class="hidden sm:inline">Abrir en Ventana Directa</span>
+        </button>
+        <button onclick="closePlayerModal()" title="Cerrar" class="p-2 bg-red-900/40 hover:bg-red-600 text-red-300 hover:text-white rounded border border-red-500/40 transition-all ml-2">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Frame Container -->
+    <div class="flex-1 relative w-full h-full bg-black flex items-center justify-center overflow-hidden">
+      <!-- iFrame principal -->
+      <iframe 
+        id="gameIframe" 
+        class="w-full h-full border-0"
+        sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-modals allow-orientation-lock allow-pointer-lock allow-fullscreen"
+        allow="autoplay; fullscreen; gamepad; focus-without-user-activation"
+      ></iframe>
+
+      <!-- Fallback Screen (En caso de fallo de carga o X-Frame-Options) -->
+      <div id="iframeFallback" class="absolute inset-0 bg-[#06060c] flex flex-col items-center justify-center p-6 text-center z-10 hidden">
+        <div class="w-20 h-20 rounded-full bg-pink-500/10 border border-pink-500 flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(255,0,127,0.3)]">
+          <i data-lucide="shield-alert" class="w-10 h-10 text-pink-500"></i>
+        </div>
+        <h3 class="text-2xl font-orbitron font-bold text-white mb-2">Restricción de Marco Detectada</h3>
+        <p class="text-gray-400 max-w-md text-sm mb-6">
+          Este juego bloquea la reproducción dentro de un marco embebido por políticas de seguridad externas (X-Frame-Options/CORS). ¡Puedes jugarlo directamente en modo pantalla completa sin bloqueos!
+        </p>
+        <button 
+          onclick="openInExternalWindow()" 
+          class="cyber-button cyber-button-magenta text-white font-bold px-6 py-3 flex items-center gap-2 text-base"
+        >
+          <i data-lucide="external-link" class="w-5 h-5"></i>
+          JUGAR EN VENTANA INDEPENDIENTE
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ADMIN MODAL -->
+  <div id="adminModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-[#0b0d1b] border border-cyan-500/40 w-full max-w-2xl rounded-lg shadow-[0_0_30px_rgba(0,240,255,0.2)] p-6 relative max-h-[90vh] overflow-y-auto">
+      
+      <div class="flex items-center justify-between pb-4 border-b border-cyan-500/20 mb-6">
+        <h2 class="text-xl font-orbitron font-bold text-cyan-400 flex items-center gap-2">
+          <i data-lucide="sliders" class="w-5 h-5"></i> Panel de Control de Juegos
+        </h2>
+        <button onclick="closeAdminModal()" class="text-gray-400 hover:text-white">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+      <!-- Formulario Agregar / Editar -->
+      <form id="gameForm" onsubmit="saveGame(event)" class="space-y-4 mb-8">
+        <input type="hidden" id="gameId">
+        
+        <div>
+          <label class="block text-xs font-orbitron text-cyan-300 mb-1">TÍTULO DEL JUEGO</label>
+          <input type="text" id="formTitle" required class="w-full bg-[#05060d] border border-cyan-500/30 text-white px-3 py-2 rounded focus:outline-none focus:border-cyan-400 text-sm">
+        </div>
+
+        <div>
+          <label class="block text-xs font-orbitron text-cyan-300 mb-1">URL DE IMAGEN (PORTADA)</label>
+          <input type="url" id="formImage" required class="w-full bg-[#05060d] border border-cyan-500/30 text-white px-3 py-2 rounded focus:outline-none focus:border-cyan-400 text-sm" placeholder="https://ejemplo.com/imagen.png">
+        </div>
+
+        <div>
+          <label class="block text-xs font-orbitron text-cyan-300 mb-1">TIPO DE CONTENIDO</label>
+          <select id="formType" onchange="toggleFormType()" class="w-full bg-[#05060d] border border-cyan-500/30 text-white px-3 py-2 rounded focus:outline-none focus:border-cyan-400 text-sm">
+            <option value="url">URL Directa (Enlace web)</option>
+            <option value="html">Código HTML Embebido</option>
+          </select>
+        </div>
+
+        <div>
+          <label id="formContentLabel" class="block text-xs font-orbitron text-cyan-300 mb-1">URL DEL JUEGO</label>
+          <textarea id="formContent" required rows="3" class="w-full bg-[#05060d] border border-cyan-500/30 text-white px-3 py-2 rounded focus:outline-none focus:border-cyan-400 text-sm font-mono"></textarea>
+        </div>
+
+        <div class="flex gap-3 pt-2">
+          <button type="submit" class="cyber-button cyber-button-cyan flex-1 py-2 font-bold text-sm">
+            GUARDAR JUEGO
+          </button>
+          <button type="button" onclick="resetForm()" class="bg-gray-800 hover:bg-gray-700 text-gray-300 px-4 py-2 rounded text-sm font-bold">
+            CANCELAR
+          </button>
+        </div>
+      </form>
+
+      <!-- Import / Export & Management -->
+      <div class="border-t border-cyan-500/20 pt-6">
+        <h3 class="text-sm font-orbitron text-pink-400 mb-3">GESTIÓN DE DATOS & COPIA DE SEGURIDAD</h3>
+        <div class="flex flex-wrap gap-3">
+          <button onclick="exportJSON()" class="bg-slate-800 hover:bg-slate-700 text-cyan-400 border border-cyan-500/30 px-3 py-2 rounded text-xs font-bold flex items-center gap-1.5">
+            <i data-lucide="download" class="w-4 h-4"></i> Exportar JSON
+          </button>
+          <label class="bg-slate-800 hover:bg-slate-700 text-cyan-400 border border-cyan-500/30 px-3 py-2 rounded text-xs font-bold flex items-center gap-1.5 cursor-pointer">
+            <i data-lucide="upload" class="w-4 h-4"></i> Importar JSON
+            <input type="file" accept=".json" onchange="importJSON(event)" class="hidden">
+          </label>
+          <button onclick="restoreDefaultGames()" class="bg-red-950/60 hover:bg-red-900 text-red-300 border border-red-500/30 px-3 py-2 rounded text-xs font-bold flex items-center gap-1.5 ml-auto">
+            <i data-lucide="refresh-cw" class="w-4 h-4"></i> Restaurar Predeterminados
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SCRIPT DE CHAT KNOCKET -->
+  <script src="https://trtc.io/knocket-sdk/sdk.js?identifier=d53a192b9b6970de05&v=1792510409642" async></script>
+
+  <!-- LÓGICA PRINCIPAL JAVASCRIPT -->
+  <script>
+    const STORAGE_KEY = 'juegos_julio_v8';
+
+
+    // Logos de los juegos indicados; se sincronizan también con las listas ya guardadas.
+    const LOGO_IMAGE_URLS = {
+      'minecraft': 'https://nintendoeverything.com/wp-content/uploads/Minecraft-24.60-update.jpg',
+      '5-nights-at-epstein': 'https://clickergamesaz.io/data/image/FiveNightsatEpsteins.png',
+      'granny': 'https://static.wikia.nocookie.net/granny/images/e/ee/Grannyicon.png/revision/latest?cb=20190315152127',
+      'geometry-dash': 'https://static.wikia.nocookie.net/logopedia/images/4/41/Geometry_Dash_Icon.svg/revision/latest?cb=20231227153428&path-prefix=es',
+      'mini-formula-1': 'https://ih1.redbubble.net/image.4159340694.5701/st,small,507x507-pad,600x600,f8f8f8.jpg',
+      'happy-wheels': 'https://img.poki-cdn.com/cdn-cgi/image/q=78,scq=50,width=1200,height=1200,fit=cover,f=png/bdeea6562dcab80a1905969266b0de38/happy-wheels-logo.png'
+    };
+    const LOGO_GAME_IDS = Object.keys(LOGO_IMAGE_URLS);
+    const GAME_TITLE_OVERRIDES = { 'minecraft': 'Minecraft 1.26' };
+
+    const DEFAULT_GAMES = [
+      {
+        id: "among-us",
+        title: "Among Us",
+        image: "https://upload.wikimedia.org/wikipedia/en/9/9a/Among_Us_cover_art.jpg",
+        type: "html",
+        content: `<!DOCTYPE html><html><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mamayaya1/game@f3a882424a8f28d07bdf456b251d889725c4c1e4/projects/among-us/style.css"/></head><body><script>window.addEventListener("keydown", function(e) { if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);<\/script><noscript><div id="notSupportedWrap"><h2 id="notSupportedTitle">This content requires JavaScript</h2><p class="notSupportedMessage">JavaScript appears to be disabled. Please enable it to view this content. Thanks! :)</p></div></noscript><script src="https://cdn.jsdelivr.net/gh/mamayaya1/game@f3a882424a8f28d07bdf456b251d889725c4c1e4/projects/among-us/scripts/supportcheck.js"><\/script><script src="https://cdn.jsdelivr.net/gh/mamayaya1/game@f3a882424a8f28d07bdf456b251d889725c4c1e4/projects/among-us/scripts/offlineclient.js" type="module"><\/script><script src="https://cdn.jsdelivr.net/gh/gahaden/ags@4f1a2b8755bcbf67ba043a7eca6c2e05d0b5bfe5/main.js" type="module"><\/script><script src="https://cdn.jsdelivr.net/gh/mamayaya1/game@f3a882424a8f28d07bdf456b251d889725c4c1e4/projects/among-us/scripts/register-sw.js" type="module"><\/script></body></html>`
+      },
+      {
+        id: "minecraft",
+        title: "Minecraft 1.26",
+        image: "https://nintendoeverything.com/wp-content/uploads/Minecraft-24.60-update.jpg",
+        type: "url",
+        content: "https://mc126.vercel.app/"
+      },
+      {
+        id: "brawl-stars",
+        title: "Brawl Stars",
+        image: "https://cdn.jsdelivr.net/gh/ragdoi-archers/zort@main/icon.png",
+        type: "html",
+        content: `<!DOCTYPE html><html lang="en-us"><head><meta charset="utf-8"/><title>Brawl Stars</title><style>html,body{width:100%;height:100%;padding:0;margin:0;background:#242424;overflow:hidden}.fullscreen{width:100%;height:100%;position:absolute;top:0;left:0}</style></head><body><canvas id="canvas" class="fullscreen"></canvas><script src="https://cdn.jsdelivr.net/gh/Deformed-steve/brawl-stars@main/howler.js"><\/script><script>window.bridge={platform:{id:'',language:'en'},device:{type:'desktop'},player:{isAuthorized:false},storage:{defaultType:'local',isSupported:()=>true,isAvailable:()=>true},advertisement:{on:()=>{}},game:{on:()=>{}}};const unityLoader=document.createElement('script');unityLoader.src='https://cdn.jsdelivr.net/gh/ragdoi-archers/zort@main/Build/web.loader.js';unityLoader.onload=()=>{createUnityInstance(document.getElementById('canvas'),{dataUrl:'https://cdn.jsdelivr.net/gh/ragdoi-archers/zort@main/Build/web.data.unityweb',frameworkUrl:'https://cdn.jsdelivr.net/gh/ragdoi-archers/zort@main/Build/web.framework.js.unityweb',codeUrl:'https://cdn.jsdelivr.net/gh/ragdoi-archers/zort@main/Build/web.wasm.unityweb',streamingAssetsUrl:'https://cdn.jsdelivr.net/gh/ragdoi-archers/zort@main/StreamingAssets/',companyName:'DefaultCompany',productName:'Clicker',productVersion:'0.1'}).catch(e=>console.error(e))};document.body.appendChild(unityLoader);<\/script></body></html>`
+      },
+      {
+        id: "5-nights-at-epstein",
+        title: "5 Nights at Epstein",
+        image: "https://clickergamesaz.io/data/image/FiveNightsatEpsteins.png",
+        type: "url",
+        content: "https://freedomgamingzone.github.io/five-nights-at-epsteins/"
+      },
+      {
+        id: "rocket-league",
+        title: "Rocket League 3V3",
+        image: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Rocket_League_coverart.jpg",
+        type: "url",
+        content: "https://rocket-arena-3v3.vercel.app/"
+      },
+      {
+        id: "granny",
+        title: "Granny",
+        image: "https://static.wikia.nocookie.net/granny/images/e/ee/Grannyicon.png/revision/latest?cb=20190315152127",
+        type: "url",
+        content: "https://granny-amber-two.vercel.app/"
+      },
+      {
+        id: "geometry-dash",
+        title: "Geometry Dash",
+        image: "https://static.wikia.nocookie.net/logopedia/images/4/41/Geometry_Dash_Icon.svg/revision/latest?cb=20231227153428&path-prefix=es",
+        type: "url",
+        content: "https://gm-sigma-six.vercel.app/"
+      },
+      {
+        id: "mini-formula-1",
+        title: "Mini Formula 1",
+        image: "https://ih1.redbubble.net/image.4159340694.5701/st,small,507x507-pad,600x600,f8f8f8.jpg",
+        type: "url",
+        content: "https://prohidus777.github.io/F25/"
+      },
+      {
+        id: "happy-wheels",
+        title: "Happy Wheels",
+        image: "https://img.poki-cdn.com/cdn-cgi/image/q=78,scq=50,width=1200,height=1200,fit=cover,f=png/bdeea6562dcab80a1905969266b0de38/happy-wheels-logo.png",
+        type: "url",
+        content: "https://mrsnailman.github.io/Happy-Wheels-Source-Code/index.html"
+      }
+    ];
+
+    let games = [];
+    let currentGame = null;
+
+    // Inicialización
+    window.addEventListener('DOMContentLoaded', () => {
+      loadGames();
+      lucide.createIcons();
+    });
+
+    function loadGames() {
+      const stored = localStorage.getItem(STORAGE_KEY);
+      if (stored) {
+        try {
+          games = JSON.parse(stored);
+        } catch (e) {
+          games = [...DEFAULT_GAMES];
+        }
+      } else {
+        games = [...DEFAULT_GAMES];
+        saveToStorage();
+      }
+      // Añadir los juegos incorporados recientemente a las listas guardadas sin borrar los cambios del usuario.
+      const newlyAddedGames = DEFAULT_GAMES.filter(game =>
+        ['geometry-dash', 'mini-formula-1', 'happy-wheels'].includes(game.id)
+      );
+      let gamesUpdated = false;
+      if (Array.isArray(games)) {
+        newlyAddedGames.forEach(newGame => {
+          if (!games.some(game => game && game.id === newGame.id)) {
+            games.push({ ...newGame });
+            gamesUpdated = true;
+          }
+        });
+        // Si Minecraft se había eliminado de la lista guardada, recuperarlo sin duplicar una versión añadida manualmente.
+        const minecraftEntryExists = games.some(game => game && (
+          game.id === 'minecraft' || /minecraft/i.test(game.title || '') ||
+          String(game.content || '').includes('mc126.vercel.app')
+        ));
+        if (!minecraftEntryExists) {
+          const defaultMinecraft = DEFAULT_GAMES.find(game => game.id === 'minecraft');
+          if (defaultMinecraft) {
+            games.push({ ...defaultMinecraft });
+            gamesUpdated = true;
+          }
+        }
+      }
+      // Actualizar solo las imágenes solicitadas y el nombre de Minecraft, preservando el resto de cada juego.
+      if (Array.isArray(games)) {
+        LOGO_GAME_IDS.forEach(id => {
+          const matchingGames = id === 'minecraft'
+            ? games.filter(item => item && (
+                item.id === 'minecraft' || /minecraft/i.test(item.title || '') ||
+                String(item.content || '').includes('mc126.vercel.app')
+              ))
+            : games.filter(item => item && item.id === id);
+          const logoUrl = LOGO_IMAGE_URLS[id];
+          matchingGames.forEach(game => {
+            if (game.image !== logoUrl) {
+              game.image = logoUrl;
+              gamesUpdated = true;
+            }
+            if (GAME_TITLE_OVERRIDES[id] && game.title !== GAME_TITLE_OVERRIDES[id]) {
+              game.title = GAME_TITLE_OVERRIDES[id];
+              gamesUpdated = true;
+            }
+          });
+        });
+      }
+      if (gamesUpdated) saveToStorage();
+      renderGames();
+    }
+
+    function saveToStorage() {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(games));
+    }
+
+    function renderGames() {
+      const grid = document.getElementById('gamesGrid');
+      const emptyState = document.getElementById('emptyState');
+      const query = document.getElementById('searchInput').value.toLowerCase().trim();
+
+      const filtered = games.filter(game => game.title.toLowerCase().includes(query));
+
+      grid.innerHTML = '';
+
+      if (filtered.length === 0) {
+        emptyState.classList.remove('hidden');
+        return;
+      }
+
+      emptyState.classList.add('hidden');
+
+      filtered.forEach(game => {
+        const card = document.createElement('div');
+        const isLogoGame = LOGO_GAME_IDS.includes(game.id);
+        const imageFitClass = isLogoGame ? 'object-contain p-3' : 'object-cover';
+        const imageOverlayOpacity = isLogoGame ? 'opacity-10' : 'opacity-90';
+        card.className = 'cyber-card group flex flex-col justify-between overflow-hidden relative';
+        
+        card.innerHTML = `
+          <div class="relative h-48 overflow-hidden bg-black/50">
+            <img 
+              src="${game.image}" 
+              alt="${game.title}" 
+              class="w-full h-full ${imageFitClass} group-hover:scale-110 transition-transform duration-500"
+              onerror="this.src='https://placehold.co/400x300/0b0d1b/00f0ff?text=GAME+IMAGE'"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0c0e1c] via-transparent to-transparent ${imageOverlayOpacity}"></div>
+            
+            <button 
+              onclick="editGame('${game.id}', event)" 
+              class="absolute top-2 right-2 p-1.5 bg-black/70 hover:bg-cyan-500 hover:text-black text-cyan-400 rounded border border-cyan-500/40 opacity-0 group-hover:opacity-100 transition-all"
+              title="Editar Juego"
+            >
+              <i data-lucide="edit-3" class="w-4 h-4"></i>
+            </button>
+            <button 
+              onclick="deleteGame('${game.id}', event)" 
+              class="absolute top-2 right-10 p-1.5 bg-black/70 hover:bg-red-500 hover:text-white text-red-400 rounded border border-red-500/40 opacity-0 group-hover:opacity-100 transition-all"
+              title="Eliminar Juego"
+            >
+              <i data-lucide="trash-2" class="w-4 h-4"></i>
+            </button>
+          </div>
+
+          <div class="p-4 flex flex-col flex-1 justify-between gap-3">
+            <div>
+              <h3 class="font-orbitron font-bold text-lg text-white group-hover:text-cyan-400 transition-colors truncate">
+                ${game.title}
+              </h3>
+              <span class="inline-block mt-1 text-[10px] font-orbitron px-2 py-0.5 rounded bg-cyan-950 text-cyan-300 border border-cyan-800">
+                ${game.type === 'url' ? 'DIRECT URL' : 'EMBED HTML'}
+              </span>
+            </div>
+
+            <button 
+              onclick="playGame('${game.id}')"
+              class="cyber-button cyber-button-cyan w-full py-2.5 font-bold font-orbitron text-xs flex items-center justify-center gap-2 mt-2"
+            >
+              <i data-lucide="play" class="w-4 h-4 fill-current"></i> JUGAR AHORA
+            </button>
+          </div>
+        `;
+
+        grid.appendChild(card);
+      });
+
+      lucide.createIcons();
+    }
+
+    // Reproductor de Juegos
+    function playGame(id) {
+      const game = games.find(g => g.id === id);
+      if (!game) return;
+
+      currentGame = game;
+      document.getElementById('modalGameTitle').innerText = game.title;
+      
+      const iframe = document.getElementById('gameIframe');
+      const fallback = document.getElementById('iframeFallback');
+      
+      fallback.classList.add('hidden');
+      iframe.classList.remove('hidden');
+
+      if (game.type === 'url') {
+        iframe.removeAttribute('srcdoc');
+        iframe.src = game.content;
+      } else if (game.id === 'among-us') {
+        // Cargar Among Us directamente como documento del iframe evita el renderizado negro
+        // que puede producir la escritura manual del documento con scripts de tipo module.
+        iframe.removeAttribute('src');
+        iframe.srcdoc = game.content;
+      } else {
+        iframe.removeAttribute('srcdoc');
+        iframe.src = 'about:blank';
+        setTimeout(() => {
+          const doc = iframe.contentWindow.document;
+          doc.open();
+          doc.write(game.content);
+          doc.close();
+        }, 50);
+      }
+
+      document.getElementById('playerModal').classList.remove('hidden');
+    }
+
+    function closePlayerModal() {
+      const iframe = document.getElementById('gameIframe');
+      iframe.src = 'about:blank';
+      document.getElementById('playerModal').classList.add('hidden');
+      currentGame = null;
+    }
+
+    function reloadGame() {
+      if (currentGame) {
+        playGame(currentGame.id);
+      }
+    }
+
+    function toggleFullscreen() {
+      const iframe = document.getElementById('gameIframe');
+      if (iframe.requestFullscreen) {
+        iframe.requestFullscreen();
+      } else if (iframe.webkitRequestFullscreen) {
+        iframe.webkitRequestFullscreen();
+      }
+    }
+
+    function openInExternalWindow() {
+      if (!currentGame) return;
+
+      if (currentGame.type === 'url') {
+        window.open(currentGame.content, '_blank');
+      } else {
+        const win = window.open('', '_blank');
+        win.document.write(currentGame.content);
+        win.document.close();
+      }
+    }
+
+    // Admin Panel Functions
+    function openAdminModal() {
+      resetForm();
+      document.getElementById('adminModal').classList.remove('hidden');
+    }
+
+    function closeAdminModal() {
+      document.getElementById('adminModal').classList.add('hidden');
+    }
+
+    function toggleFormType() {
+      const type = document.getElementById('formType').value;
+      const label = document.getElementById('formContentLabel');
+      const textarea = document.getElementById('formContent');
+
+      if (type === 'url') {
+        label.innerText = 'URL DEL JUEGO';
+        textarea.placeholder = 'https://ejemplo.com/juego';
+      } else {
+        label.innerText = 'CÓDIGO HTML EMBEBIDO';
+        textarea.placeholder = '<!DOCTYPE html><html>...</html>';
+      }
+    }
+
+    function saveGame(e) {
+      e.preventDefault();
+      const id = document.getElementById('gameId').value || 'game_' + Date.now();
+      const title = document.getElementById('formTitle').value.trim();
+      const image = document.getElementById('formImage').value.trim();
+      const type = document.getElementById('formType').value;
+      const content = document.getElementById('formContent').value.trim();
+
+      const index = games.findIndex(g => g.id === id);
+      const newGame = { id, title, image, type, content };
+
+      if (index >= 0) {
+        games[index] = newGame;
+      } else {
+        games.push(newGame);
+      }
+
+      saveToStorage();
+      renderGames();
+      closeAdminModal();
+    }
+
+    function editGame(id, event) {
+      event.stopPropagation();
+      const game = games.find(g => g.id === id);
+      if (!game) return;
+
+      document.getElementById('gameId').value = game.id;
+      document.getElementById('formTitle').value = game.title;
+      document.getElementById('formImage').value = game.image;
+      document.getElementById('formType').value = game.type;
+      document.getElementById('formContent').value = game.content;
+
+      toggleFormType();
+      document.getElementById('adminModal').classList.remove('hidden');
+    }
+
+    function deleteGame(id, event) {
+      event.stopPropagation();
+      if (confirm('¿Estás seguro de que deseas eliminar este juego?')) {
+        games = games.filter(g => g.id !== id);
+        saveToStorage();
+        renderGames();
+      }
+    }
+
+    function resetForm() {
+      document.getElementById('gameId').value = '';
+      document.getElementById('gameForm').reset();
+      toggleFormType();
+    }
+
+    function restoreDefaultGames() {
+      if (confirm('¿Deseas restaurar la lista de juegos por defecto? Perderás tus modificaciones.')) {
+        games = [...DEFAULT_GAMES];
+        saveToStorage();
+        renderGames();
+        closeAdminModal();
+      }
+    }
+
+    function exportJSON() {
+      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(games, null, 2));
+      const downloadAnchor = document.createElement('a');
+      downloadAnchor.setAttribute("href", dataStr);
+      downloadAnchor.setAttribute("download", "juegos_julio_backup.json");
+      document.body.appendChild(downloadAnchor);
+      downloadAnchor.click();
+      downloadAnchor.remove();
+    }
+
+    function importJSON(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        try {
+          const imported = JSON.parse(e.target.result);
+          if (Array.isArray(imported)) {
+            games = imported;
+            saveToStorage();
+            renderGames();
+            alert('¡Juegos importados con éxito!');
+            closeAdminModal();
+          } else {
+            alert('El archivo JSON no tiene un formato válido.');
+          }
+        } catch (err) {
+          alert('Error al leer el archivo JSON.');
+        }
+      };
+      reader.readAsText(file);
+    }
+  </script>
+</body>
+</html>
